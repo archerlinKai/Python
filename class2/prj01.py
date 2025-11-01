@@ -56,7 +56,7 @@ print(str([1, 2, 3]))
 # 函式input
 # 函式input會讓程式暫停並等待使用者輸入資料
 name = input("請輸入你的名字: ")  # 等待使用者輸入名字()後面的不算name
-print(type(name))  # input輸入的資料型態都是字串
+# print(type(name))  # input輸入的資料型態都是字串
 print(f"你好{name}!")
 age = input("請輸入你的年齡: ")  # 等待使用者輸入年齡()後面的不算age
 age = int(age)  # 把輸入的年齡轉換成整數
