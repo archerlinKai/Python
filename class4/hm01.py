@@ -1,8 +1,7 @@
 num = input("請輸入身高(m): ")
 n = input("請輸入體重(kg): ")
-int(n)
-int(num)
-bmi =( / (num / n) ** 2)
+float(n)
+bmi = float(n) / (float(num) * float(num))
 if bmi < 18.5:
     print(f"BMI值為{bmi:.2f},體重過輕")
 elif 18.5 <= bmi < 24:
