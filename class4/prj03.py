@@ -44,7 +44,7 @@ t.color("red")  # 設定顏色為紅色
 t.shape("turtle")  # 設定圖案為烏龜
 import turtle as t
 
-for i in range(120):  # 重複5次
+for i in range(120):  # 重複120次
     t.shape("turtle")  # 設定圖案為烏龜
     t.forward(20)  # 向前移動20單位
     t.stamp()  # 蓋印章
