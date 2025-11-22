@@ -3,8 +3,8 @@ import time as t
 import turtle as tr
 
 tr.speed(0)  # 設定畫筆速度為最快
-tr.hideturtle()  # 隱藏烏龜圖案
 tr.forward(100)  # 向前移動100單位
+tr.hideturtle()  # 隱藏畫筆箭頭
 
 for i in range(60):  # 重複60次
     tr.clear()  # 清除畫面
