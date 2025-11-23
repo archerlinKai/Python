@@ -1,8 +1,9 @@
 x = 0
-A = float(input("請輸入商品經額:"))
+A = int(input("請輸入商品金額: "))
+
 while A != 0:
-    A += x
-    print(f"目前總額為:{A}")
-    A = int(input("請輸入商品經額:"))
-if A == 0:
-    print("結帳完畢")
+    x += A
+    print(f"目前總金額為{ x }元")
+    A = int(input("請輸入商品金額: "))
+
+print("結帳完畢")
