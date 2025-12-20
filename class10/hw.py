@@ -2,7 +2,7 @@
 shopping_list = []
 
 while True:
-    print("目前購物清單：", shopping_list)
+    print(f"目前購物清單："{shopping_list})
     print("1. 新增  2. 修改  3. 刪除  4. 離開")
     choice = input("請選擇功能：")
 
@@ -12,7 +12,7 @@ while True:
 
     elif choice == "2":
         if shopping_list:
-            num = int(input(f"輸入編號 (1~{len(shopping_list)})：")) - 1
+            num = int(input(f"輸入編號 (1~{len(shopping_list)}):")) - 1
             shopping_list[num] = input("輸入新名稱：")
         elif not shopping_list:
             item = "請輸入商品名稱"
@@ -20,7 +20,7 @@ while True:
 
     elif choice == "3":
         if shopping_list:
-            num = int(input(f"輸入要刪除的編號 (1~{len(shopping_list)})：")) - 1
+            num = int(input(f"輸入要刪除的編號 (1~{len(shopping_list)}): ")) - 1
             shopping_list.pop(num)
         else:
             print("清單是空的！")

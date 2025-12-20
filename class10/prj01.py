@@ -33,4 +33,30 @@ print(s)  # 印出Python
 L = ["Hello", "Python", "java", "World"]
 s = L.pop(-2)  # 移除索引-2的元素,並回傳該元素
 print(L)  # 印出['Hello', 'Python', 'World']
-#
+
+
+# emumerate:同時取得元素的索引和值
+L = ["Hello", "Python", "java", "World"]
+for index, value in enumerate(L):
+    print(f"索引:{index}, 值:{value}")
+# 印出:
+# 索引:0, 值:Hello
+
+# in 可以用在很多地方,像是If判斷式
+# 可以用來檢查某個元素是否在list當中
+L = ["Hello", "Python", "java", "World"]
+if "Python" in L:
+    print("有找到Python")
+else:
+    print("沒有找到Python")
+
+# in 也可以用在for迴圈當中
+# 可以用來依序取得list當中的每一個元素
+L = ["Hello", "Python", "java", "World"]
+for item in L:
+    print(item)
+
+# in還可以用在字串當中,檢查某個字串是否再自川當中
+s = "Hello Python World"
+if "Python" in s:
+    print("有找到Python")
