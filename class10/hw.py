@@ -1,3 +1,4 @@
+# 我的超市清單
 shopping_list = []
 
 while True:
