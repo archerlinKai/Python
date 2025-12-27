@@ -53,3 +53,32 @@ print(L)  # 印出 ['2024', '06', '15']
 L = ["Hello", "World", "Python"]
 s = " ".join(L)
 print(s)  # 印出 Hello World Python
+
+
+# 建立字典 使用大括號{},key,value使用冒號分隔
+d = {"蘋果": 20, "香蕉": 15, "橘子": 30}
+print(d)  # 印出 {'蘋果': 20, '香蕉': 15, '橘子': 30}
+
+# 遍歷字典:有多種方式可以走訪字典中的資料
+d = {"蘋果": 20, "香蕉": 15, "橘子": 30}
+
+# 方法1:遍歷字典的key
+for key in d:
+    print(f"水果:{key}, 價格:{d[key]}")
+# 印出:
+# 水果:蘋果, 價格:20
+# 水果:香蕉, 價格:15
+# 水果:橘子, 價格:30
+# 方法2:使用items()方法同時取得key和value
+for key, value in d.items():
+    print(f"水果:{key}, 價格:{value}")
+# 印出:
+# 水果:蘋果, 價格:20
+# 水果:香蕉, 價格:15
+# 水果:橘子, 價格:30
+# 方法3:使用keys()方法取得所有key
+for key in d.keys():
+    print(f"水果:{key}")
+# 方法4:使用values()方法取得所有value
+for value in d.values():
+    print(f"價格:{value}")
